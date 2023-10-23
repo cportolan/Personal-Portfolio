@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    /* COLORS */
+    --black_color: #252525;
+    --white_color: #f2f2f2;
+    --purple_color: #4523ce;
+    /* FONT SIZES */
+    --title_size: 25px;
+    --body_size: 16px;
+}
+
+body {
+    background-color: var(--white_color);
+}
+
+a, li {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 20rem;
+    background-color: black;
+}
+
+.navbar__responsive {
+    display: none;
+}
+
+.header__navbar > a {
+    color: var(--black_color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__navbar > a, button {
+    margin: 0px 20px;
+}
+
+.header__navbar > button {
+    background-color: var(--purple_color);
+    padding: 7px 14px;
+    border: none;
+    border-radius: 20px;
+}
+
+.header__navbar > button > a {
+    color: var(--white_color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__responsive {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .header__responsive {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+
+    #header__icon {
+        display: block;
+        color: var(--black_color);
+        cursor: pointer;
+        font-size: var(--title_size);
+    }
+
+    .navbar__responsive {
+        display: block;
+        position: absolute;
+        top: -600px;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: var(--black_color);
+        transition: all 0.2s;
+    }
+
+    .active {
+        transform: translateY(600px);
+        transition: all 0.2s;
+    }
+}
+
+/* SOBRE MI */
+
+/* PROYECTOS */
+
+/* CONTACTO */
+
+
