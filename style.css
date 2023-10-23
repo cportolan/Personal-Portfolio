@@ -8,7 +8,7 @@
 :root {
     /* COLORS */
     --black_color: #252525;
-    --white_color: #fff;
+    --white_color: #f2f2f2;
     --lightblue_color: #0b7fdf;
     /* FONT SIZES */
     --title_size: 25px;
@@ -33,6 +33,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
+    background-color: var(--black_color);
 }
 
 .header__logo {
@@ -55,7 +56,7 @@ header {
 
 .header__navbar > ul > li > a {
     display: block;
-    color: var(--black_color);
+    color: var(--white_color);
     font-size: 18px;
     font-weight: 500;
     transition: all .2s;
@@ -74,7 +75,7 @@ header {
 }
 
 .header__navbar .header__contact-btn:hover {
-    background: #220596;
+    background: #0866b3;
     color: var(--white_color);
 }
 
@@ -94,7 +95,7 @@ header {
         display: block;
         cursor: pointer;
         font-size: 30px;
-        color: var(--black_color);
+        color: var(--white_color);
     }
 
     .header__navbar {
@@ -104,10 +105,10 @@ header {
         left: 0;
         right: 0;
         width: 100vw;
-        color: var(--black_color);
+        color: var(--white_color);
         transition: .2s;
         overflow: hidden;
-        background-color: #f4f3f3;
+        background-color: var(--black_color);
     }
 
     .header__navbar > ul {
@@ -119,7 +120,7 @@ header {
     }
 
     .header__navbar > ul > li > a {
-        margin: 20px 0px;
+        margin: 20px 0;
         font-weight: 400;
     }
 
