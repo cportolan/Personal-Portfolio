@@ -22,6 +22,15 @@ body {
 a, li {
     text-decoration: none;
     list-style: none;
+    color: var(--black_color);
+}
+
+p, h2, i {
+    color: var(--black_color);
+}
+
+#lightblue {
+    color: var(--lightblue_color);
 }
 
 /* HEADER */
@@ -32,8 +41,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 140px;
     background-color: var(--black_color);
+    box-shadow: 0 .5px 5px;
 }
 
 .header__logo {
@@ -88,7 +98,6 @@ header {
 @media only screen and (max-width: 768px) {
     header {
         padding: 0 30px;
-        position: fixed;
     }
 
     #header__icon {
@@ -107,8 +116,8 @@ header {
         width: 100vw;
         color: var(--white_color);
         transition: .2s;
-        overflow: hidden;
         background-color: var(--black_color);
+        overflow: hidden;
     }
 
     .header__navbar > ul {
@@ -116,7 +125,7 @@ header {
         width: fit-content;
         margin: 62.5px auto;
         text-align: center;
-        transition: 0.4s;
+        transition: .4s;
     }
 
     .header__navbar > ul > li > a {
@@ -127,10 +136,153 @@ header {
     .active {
         height: 250px;
     }
-
 }
 
 /* SOBRE MI */
+
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding: 300px 140px;
+}
+
+.aboutme__right, .aboutme__left {
+    max-width: 50vw;
+}
+
+.aboutme__left-text > h2 {
+    font-size: 50px;
+}
+
+.aboutme__left-text > p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.aboutme__left-icons {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.aboutme__left-icons > a > i {
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+.aboutme__left-text > h2 > span {
+    color: var(--lightblue_color);
+}
+
+.aboutme__left-icons > a > button {
+    border: none;
+    background-color: var(--lightblue_color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: var(--white_color);
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.aboutme__left-icons > a > button:hover {
+    background-color: #0866b3;
+    transition: .2s;
+}
+
+.aboutme__left-icons > a > button > i {
+    color: var(--white_color);
+    margin-right: 4px;
+}
+
+.aboutme__right-text > p {
+    font-size: 16px;
+    padding: 0 0 10px 0;
+    max-width: 67vh;
+}
+
+.aboutme__right-text > p > span {
+    color: var(--lightblue_color);
+}
+
+.aboutme__right-icons > i {
+    color: var(--black_color);
+    font-size: 28px;
+    padding: 2px 15px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutme {
+        display: block;
+        padding: 0px 20px;
+    }
+
+    .aboutme__left-text > h2 {
+        font-size: 40px;
+    }
+
+    .aboutme__left-text > p {
+        font-size: 16px;
+    }
+
+    .aboutme__left-icons {
+        padding: 10px 0;
+    }
+    
+    .aboutme__left-icons > a > i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .aboutme__left-icons > a > button {
+        border: none;
+        background-color: var(--lightblue_color);
+        padding: 8px 20px;
+        border-radius: 20px;
+        color: var(--white_color);
+        font-weight: 500;
+        font-size: 16px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    .aboutme__left-icons > a > button:hover {
+        background-color: #0866b3;
+        transition: .2s;
+    }
+    
+    .aboutme__left-icons > a > button > i {
+        color: var(--white_color);
+        margin-right: 4px;
+    }
+    
+    .aboutme__right-text > p {
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    
+    .aboutme__right-text > p > span {
+        color: var(--lightblue_color);
+    }
+    
+    .aboutme__right-icons > i {
+        color: var(--black_color);
+        font-size: 28px;
+        padding: 2px 15px 0 0;
+    }
+
+
+    .aboutme__left, .aboutme__right {
+        display: block;
+        max-width: 100vh;
+        padding: 30px 0;
+        margin: auto;
+    }
+}
 
 /* PROYECTOS */
 
@@ -139,4 +291,3 @@ header {
 .contact {
     padding: 1000px 0px;
 }
-
