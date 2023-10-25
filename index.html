@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Portolan Cristian</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Portolan Cristian - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/6e4d8a2d7a.js" crossorigin="anonymous"></script>
@@ -15,48 +16,52 @@
 
     <!-- HEADER -->
     <header class="header">
-        <img src="img/logo.png" alt="Logo" class="header__logo">
-        <i class="fa-solid fa-bars" id="header__icon"></i>
-        <nav class="header__navbar">
-            <ul>
-                <li><a href="#aboutme">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact" class="header__contact-btn">Contacto</a></li>
-            </ul> 
-        </nav>
+        <div class="header-content">
+            <img src="img/logo.png" alt="Logo" class="header__logo">
+            <i class="fa-solid fa-bars" id="header__icon"></i>
+            <nav class="header__navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="header__contact-btn">Contact Me</a></li>
+                </ul> 
+            </nav>
+        </div>
     </header>
 
     <!-- ABOUT ME -->
-    <div class="aboutme" id="aboutme">
-        <div class="aboutme__left">
-            <div class="aboutme__left-text">
-                <h2>Hola, soy <span>Cristian Portolan.</span></h2>
-                <p>Desarrollador de Software | Desarrollador & Diseñador Web</p>
+    <section class="aboutme" id="aboutme">
+        <div class="aboutme-content">
+            
+            <div class="aboutme__principal">
+                <div class="aboutme__principal-text">
+                    <h2>Cristian Portolan.</h2>
+                    <p>Software Developer | Web Developer & Designer.</p>
+                </div>
+                <div class="aboutme__principal-icons">
+                    <a href="img/CV Cristian Portolan.pdf" download="CV Cristian Portolan.pdf"><button class="aboutme__left-btn">Download CV</button></a>
+                    <a href="https://www.linkedin.com/in/cristian-portolan-5823ba287/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/cportolan"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="aboutme__secondary-text">
+                    <p>Apasionado estudiante de Ingeniería Informática en la Universidad de Buenos Aires.</p>
+                    <p>Busco expandir mis conocimientos a diario y desarollar aún más mi experiencia como Desarollador Front-End y Desarollador de Software. Me gustan los desafíos y poder superarme día tras día.</p>
+                    <p>Estas son algunas de las tecnologías que puedo manejar:</p>
+                </div>
+                <div class="aboutme__secondary-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3" id="lightblue"></i>
+                    <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                    <i class="fa-brands fa-react" title="React JS" id="lightblue"></i>
+                    <i class="fa-solid fa-c" title="C Language"></i>
+                    <i class="fa-brands fa-git" title="Git & Github" id="lightblue"></i>
+                    <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+                    <i class="fa-brands fa-python" title="Python" id="lightblue"></i>
+                </div>
             </div>
-            <div class="aboutme__left-icons">
-                <a href="img/CV Cristian Portolan.pdf" download="CV Cristian Portolan.pdf"><button class="aboutme__left-btn"><i class="fa-solid fa-download"></i> Descargar CV</button></a>
-                <a href="https://www.linkedin.com/in/cristian-portolan-5823ba287/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/cportolan"><i class="fa-brands fa-github"></i></a>
-            </div>
+            <img src="img/aboutme.png" alt="About me IMG">
         </div>
-        <div class="aboutme__right">
-            <div class="aboutme__right-text">
-                <p>Apasionado estudiante de Ingeniería Informática en la Universidad de Buenos Aires.</p>
-                <p>Busco expandir mis conocimientos a diario y desarollar aún más mi experiencia como Desarollador Front-End y Desarollador de Software. Me gustan los desafíos y poder superarme día tras día.</p>
-                <p>Estas son algunas de las tecnologías que puedo manejar:</p>
-            </div>
-            <div class="aboutme__right-icons">
-                <i class="fa-brands fa-html5" title="HTML5"></i>
-                <i class="fa-brands fa-css3-alt" title="CSS3" id="lightblue"></i>
-                <i class="fa-brands fa-square-js" title="JavaScript"></i>
-                <i class="fa-brands fa-react" title="React JS" id="lightblue"></i>
-                <i class="fa-solid fa-c" title="C Language"></i>
-                <i class="fa-brands fa-git" title="Git & Github" id="lightblue"></i>
-                <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
-                <i class="fa-brands fa-python" title="Python" id="lightblue"></i>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- PROJECTS -->
     <div class="projects" id="projects">
