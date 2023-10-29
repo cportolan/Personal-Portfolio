@@ -13,7 +13,8 @@
     <script src="https://kit.fontawesome.com/6e4d8a2d7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <div class="container">
+    
     <!-- HEADER -->
     <header class="header">
         <div class="header-content">
@@ -23,7 +24,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact" class="header__contact-btn">Contact Me</a></li>
+                    <li><a href="#contact" class="header__contact-btn">Contact</a></li>
                 </ul> 
             </nav>
         </div>
@@ -32,21 +33,20 @@
     <!-- ABOUT ME -->
     <section class="aboutme" id="aboutme">
         <div class="aboutme-content">
-            
             <div class="aboutme__principal">
                 <div class="aboutme__principal-text">
                     <h2>Cristian Portolan.</h2>
                     <p>Software Developer | Web Developer & Designer.</p>
                 </div>
                 <div class="aboutme__principal-icons">
-                    <a href="img/CV Cristian Portolan.pdf" download="CV Cristian Portolan.pdf"><button class="aboutme__left-btn">Download CV</button></a>
-                    <a href="https://www.linkedin.com/in/cristian-portolan-5823ba287/"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/cportolan"><i class="fa-brands fa-github"></i></a>
+                    <a href="img/CV Cristian Portolan.pdf" download="CV Cristian Portolan.pdf"><button class="aboutme__left-btn"><i class="fa-solid fa-arrow-down"></i> Download CV</button></a>
+                    <a href="https://www.linkedin.com/in/cristian-portolan-5823ba287/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/cportolan" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <div class="aboutme__secondary-text">
-                    <p>Apasionado estudiante de Ingeniería Informática en la Universidad de Buenos Aires.</p>
-                    <p>Busco expandir mis conocimientos a diario y desarollar aún más mi experiencia como Desarollador Front-End y Desarollador de Software. Me gustan los desafíos y poder superarme día tras día.</p>
-                    <p>Estas son algunas de las tecnologías que puedo manejar:</p>
+                    <p>Passionate Computer Engineering student at the University of Buenos Aires (UBA).</p>
+                    <p>Position at a daily seek to expand my knowledge and further develop my experience as a Front-End and Software Developer. Personally interested in challenges and being able to improve myself day by day.</p>
+                    <p>These are some of the technologies I can handle...</p>
                 </div>
                 <div class="aboutme__secondary-icons">
                     <i class="fa-brands fa-html5" title="HTML5"></i>
@@ -63,15 +63,86 @@
         </div>
     </section>
 
-    <!-- PROJECTS -->
-    <div class="projects" id="projects">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#252525" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,240C384,267,480,277,576,256C672,235,768,181,864,165.3C960,149,1056,171,1152,181.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>    
 
-    </div>
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="projects-content">
+            <div class="projects__text">
+                <h2>Projects</h2>
+                <p>These are some projects I've done recently.</p>
+            </div>
+            <div class="projects__cards">
+                <div class="card">
+                    <h3>Calculadora</h3>
+                    <p>Desarrollo de una calculadora funcional con suma, resta, multiplicacion y division. </p>
+                    <img src="img/calculatorimg.png" alt="Login">
+                    <div class="card__iconlinks">
+                        <div class="card__icons">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS3" id="lightblue"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-git" title="Git & Github" id="lightblue"></i>
+                        </div>
+                        <div class="card__links">
+                            <a href="">Repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Login Design</h3>
+                    <p>Diseño de un formulario de login genérico con las opciones correspondientes.</p>
+                    <img src="img/loginimg.png" alt="Login">
+                    <div class="card__iconlinks">
+                        <div class="card__icons">                      
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS3" id="lightblue"></i>
+                            <i class="fa-brands fa-git" title="Git & Github"></i>
+                        </div>
+                        <div class="card__links">
+                            <a href="https://github.com/cportolan/Login-Design">Repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>ToDo App</h3>
+                    <p>Desarollo de una To Do List, con funciones de agregar, modificar y eliminar tareas.</p>
+                    <img src="img/todo.png" alt="Login">
+                    <div class="card__iconlinks">
+                        <div class="card__icons">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS3" id="lightblue"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-git" title="Git & Github" id="lightblue"></i>
+                        </div>
+                        <div class="card__links">
+                            <a href="">Repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Restaurante</h3>
+                    <p>Manejo de un restaurante. Con funciones para agregar, modificar, eliminar o listar reservas.</p>
+                    <img src="img/restaurantimg.png" alt="Login">
+                    <div class="card__iconlinks">
+                        <div class="card__icons">
+                            <i class="fa-brands fa-python" title="Python"></i>
+                            <i class="fa-brands fa-git" title="Git & Github" id="lightblue"></i>
+                        </div>
+                        <div class="card__links">
+                            <a href="https://github.com/cportolan/Restaurante_Py">Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- CONTACT -->
     <div class="contact" id="contact">
 
     </div>
 
+    </div>
 </body>
 </html>
