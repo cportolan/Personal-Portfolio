@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Portolan Cristian - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- FLATICON -->
     <script src="https://kit.fontawesome.com/6e4d8a2d7a.js" crossorigin="anonymous"></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- TITLE -->
+    <title>Portolan Cristian - Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -22,9 +30,9 @@
             <i class="fa-solid fa-bars" id="header__icon"></i>
             <nav class="header__navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact" class="header__contact-btn">Contact</a></li>
+                    <li><a href="#aboutme" class="header__a">Home</a></li>
+                    <li><a href="#projects" class="header__a">Projects</a></li>
+                    <li><a href="#contact" class="header__contact-btn header__a">Contact</a></li>
                 </ul> 
             </nav>
         </div>
@@ -74,8 +82,8 @@
             </div>
             <div class="projects__cards">
                 <div class="card">
-                    <h3>Calculadora</h3>
-                    <p>Desarrollo de una calculadora funcional con suma, resta, multiplicacion y division. </p>
+                    <h3>Calculator</h3>
+                    <p>Development of a functional calculator with addition, subtraction, multiplication and division.</p>
                     <img src="img/calculatorimg.png" alt="Login">
                     <div class="card__iconlinks">
                         <div class="card__icons">
@@ -91,7 +99,7 @@
                 </div>
                 <div class="card">
                     <h3>Login Design</h3>
-                    <p>Diseño de un formulario de login genérico con las opciones correspondientes.</p>
+                    <p>Design of a generic login form with the corresponding options and register section.</p>
                     <img src="img/loginimg.png" alt="Login">
                     <div class="card__iconlinks">
                         <div class="card__icons">                      
@@ -100,13 +108,13 @@
                             <i class="fa-brands fa-git" title="Git & Github"></i>
                         </div>
                         <div class="card__links">
-                            <a href="https://github.com/cportolan/Login-Design">Repository</a>
+                            <a href="https://github.com/cportolan/Login-Design" target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <h3>ToDo App</h3>
-                    <p>Desarollo de una To Do List, con funciones de agregar, modificar y eliminar tareas.</p>
+                    <p>Development of a To Do List, with functions to add, modify and delete tasks.</p>
                     <img src="img/todo.png" alt="Login">
                     <div class="card__iconlinks">
                         <div class="card__icons">
@@ -121,8 +129,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <h3>Restaurante</h3>
-                    <p>Manejo de un restaurante. Con funciones para agregar, modificar, eliminar o listar reservas.</p>
+                    <h3>Restaurant</h3>
+                    <p>Restaurant management. With functions to add, modify, delete or list reservations.</p>
                     <img src="img/restaurantimg.png" alt="Login">
                     <div class="card__iconlinks">
                         <div class="card__icons">
@@ -130,7 +138,7 @@
                             <i class="fa-brands fa-git" title="Git & Github" id="lightblue"></i>
                         </div>
                         <div class="card__links">
-                            <a href="https://github.com/cportolan/Restaurante_Py">Repository</a>
+                            <a href="https://github.com/cportolan/Restaurante_Py" target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
@@ -138,11 +146,36 @@
         </div>
     </section>
 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#252525" fill-opacity="1" d="M0,224L80,218.7C160,213,320,203,480,208C640,213,800,235,960,224C1120,213,1280,171,1360,149.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
     <!-- CONTACT -->
     <div class="contact" id="contact">
-
+        <div class="contact-content">
+            <h2>Contact Me</h2>
+            <p>You can contact me by sending me an email or through my social networks.</p>
+            <div class="contact__icons">
+                <a href="https://www.linkedin.com/in/cristian-portolan-5823ba287/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/cportolan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/pois0nous_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="contact__form">
+                <form action="https://formsubmit.co/cristianportolan7@gmail.com" method="post">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Mail" required>
+                    <textarea name="message" placeholder="Message..." required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <h2>Website developed by <span>{Cristian Portolan}</span></h2>
+        </div>
+    </footer>
+    
     </div>
 </body>
 </html>
