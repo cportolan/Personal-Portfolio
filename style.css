@@ -1,9 +1,36 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-:root { /* COLORS */ --black_color: #252525; --white_color: #f2f2f2; --lightblue_color: #0b7fdf; /* FONT SIZES */ --body_size: 16px; }
-body { background-color: var(--white_color);}
-a, li { text-decoration: none; list-style: none; color: var(--black_color); }
-p, h2, i { color: var(--black_color); }
-#lightblue { color: var(--lightblue_color); }
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif; 
+}
+
+:root { 
+    /* COLORS */ 
+    --black_color: #252525; 
+    --white_color: #f2f2f2; 
+    --lightblue_color: #0b7fdf; 
+    /* FONT SIZES */ 
+    --body_size: 16px; 
+}
+
+body { 
+    background-color: var(--white_color);
+}
+
+a, li { 
+    text-decoration: none; 
+    list-style: none; 
+    color: var(--black_color); 
+}
+
+p, h2, i {
+    color: var(--black_color); 
+}
+
+#lightblue {
+    color: var(--lightblue_color);
+}
 
 /* HEADER */
 
@@ -67,48 +94,7 @@ header {
     color: var(--white_color);
 }
 
-@media only screen and (max-width: 1600px) { .header-content { width: 85%; margin: auto; } }
-
-@media only screen and (max-width: 1080px) {
-
-    .header-content #header__icon {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: var(--white_color);
-    }
-
-    .header__navbar {
-        height: 0px;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        color: var(--white_color);
-        transition: .2s;
-        background-color: var(--black_color);
-        overflow: hidden;
-    }
-
-    .header-content .header__navbar > ul {
-        display: block;
-        width: fit-content;
-        margin: 30vh auto;
-        text-align: center;
-        transition: .4s;
-    }
-
-    .header-content .header__navbar > ul > li > a {
-        margin: 30px 0;
-        font-weight: 400;
-        font-size: 20px;
-    }
-
-    .active { height: 100%; margin: auto;}
-}
-
-/* SOBRE MI */
+/* ABOUT ME */
 
 .aboutme {
     padding: 300px 0 90px 0;
@@ -131,11 +117,17 @@ header {
     background-color: var(--black_color);
 }
 
-.aboutme__principal { width: 500px; }
+.aboutme__principal {
+    width: 500px; 
+}
 
-.aboutme__principal-text > h2 { font-size: 55px; }
+.aboutme__principal-text > h2 {
+    font-size: 55px; 
+}
 
-.aboutme__principal-text > h2 > span { color: var(--lightblue_color); }
+.aboutme__principal-text > h2 > span {
+    color: var(--lightblue_color); 
+}
 
 .aboutme__principal-text > p {
     margin-top: 5px;
@@ -187,39 +179,20 @@ header {
     flex-wrap: wrap;
 }
 
-.aboutme__secondary-text > p { font-size: var(--body_size); padding: 0 0 15px 0; }
+.aboutme__secondary-text > p {
+    font-size: var(--body_size); 
+    padding: 0 0 15px 0; 
+}
 
-.aboutme__secondary-text > p > span { color: var(--lightblue_color); }
+.aboutme__secondary-text > p > span {
+    color: var(--lightblue_color); 
+}
 
 .aboutme__secondary-icons > i {
     color: var(--black_color);
     font-size: 35px;
     padding: 2px 15px 0 0;
     transition: .2s;
-}
-
-@media only screen and (max-width: 1600px) {.aboutme-content { width: 85%; margin: auto; } }
-
-@media only screen and (max-width: 1080px) {
-    .aboutme { width: 90%; display: grid; margin: auto; padding: 150px 0 0 0;}
-    .aboutme-content { display: grid; width: 90%; margin: auto; justify-content: center; }
-    .aboutme-content > img {width: 20px;}
-    .aboutme__principal {width: 90%; margin: auto;}
-    .aboutme__principal-text { text-align: center; }
-    .aboutme__principal-text > h2 { font-size: 40px; display: flex; justify-content: center;}
-    .aboutme__principal-text > p { font-size: 16px; }
-    .aboutme__principal-icons { padding: 10px 0 80px 0; display: flex; justify-content: center;}
-    .aboutme__secondary-text > p {display: grid; font-size: 15px; padding: 0 0 20px 0; justify-content: center; text-align: center;}
-    .aboutme__secondary-icons {display: flex; justify-content: center; padding: 0 0 50px 0;}
-    .aboutme__secondary-icons > i { color: var(--black_color); font-size: 30px; padding: 2px 5px 0 0;}
-    .aboutme-content > img { width: 350px; margin: auto;}
-}
-
-@media only screen and (max-width: 560px) {
-    .aboutme__principal-text > h2 {font-size: 30px;}
-    .aboutme__secondary-text {justify-content: center; max-width: 90%; margin: auto;}
-    .aboutme__secondary-icons > i { font-size: 25px; padding: 2px 10px 0 0; }
-    .aboutme-content > img { width: 70%; margin: auto;}
 }
 
 svg {
@@ -335,20 +308,6 @@ svg {
     transition: .2s;
 }
 
-@media only screen and (max-width: 1080px) {
-    .projects__text > h2 { font-size: 40px; }
-    .projects__text > p { font-size: var(--body_size); }
-    .card > h3 { font-size: 20px;}
-    .card > p { font-size: 16px;}
-}
-
-@media only screen and (max-width: 560px) {
-    .projects__text > h2 { font-size: 40px; }
-    .projects__text > p { font-size: var(--body_size);}
-    .card__icons { padding: 0 0 30px 0; }
-    .card__iconlinks {display: flex; flex-direction: column;}
-}
-
 /* CONTACTO */
 
 .contact {
@@ -361,7 +320,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 45%;
     margin: auto;
     max-width: 1200px;
 }
@@ -437,18 +396,6 @@ svg {
     background-color: #0866b3;
 }
 
-@media only screen and (max-width: 1080px) {
-    .contact { padding: 50px 0 150px 0; }
-    .contact-content { width: 70%; margin: auto; }
-    .contact-content > h2 { font-size: 40px; padding: 0 0 5px 0; }
-    .contact-content > p { font-size: 16px; }
-    .contact__form { margin: 20px 0; width: 100%; }
-}
-
-@media only screen and (max-width: 560px) {
-    .contact-content { width: 80%; margin: auto; }
-}
-
 /* FOOTER */
 
 footer {
@@ -469,10 +416,238 @@ footer {
     font-size: 16px;
     color: var(--white_color);
     font-weight: 400;
-    padding: 10px 0;
 }
 
 .footer-content > h2 > span {
     color: var(--lightblue_color);
     font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 1600px) {
+
+    /* HEADER RESPONSIVE */
+
+    .header-content {
+        width: 85%; 
+        margin: auto;
+    }
+
+    /* ABOUT RESPONSIVE */
+
+    .aboutme-content {
+        width: 85%; margin: auto; 
+    }
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+    /* HEADER RESPONSIVE */
+
+    .header-content #header__icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--white_color);
+    }
+
+    .header__navbar {
+        height: 0px;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: var(--white_color);
+        transition: .2s;
+        background-color: var(--black_color);
+        overflow: hidden;
+    }
+
+    .header-content .header__navbar > ul {
+        display: block;
+        width: fit-content;
+        margin: 30vh auto;
+        text-align: center;
+        transition: .4s;
+    }
+
+    .header-content .header__navbar > ul > li > a {
+        margin: 30px 0;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .active {
+        height: 100%; 
+        margin: auto;
+    }
+
+    /* ABOUT ME RESPONSIVE */
+
+    .aboutme {
+        width: 90%;
+        display: grid; 
+        margin: auto; 
+        padding: 150px 0 0 0;
+    }
+
+    .aboutme-content {
+        display: grid; 
+        width: 90%; 
+        margin: auto; 
+        justify-content: center;
+    }
+
+    .aboutme-content > img {
+        width: 20px;
+    }
+
+    .aboutme__principal {
+        width: 90%; 
+        margin: auto;
+    }
+
+    .aboutme__principal-text {
+        text-align: center;
+    }
+
+    .aboutme__principal-text > h2 {
+        font-size: 40px; 
+        display: flex; 
+        justify-content: center;
+    }
+
+    .aboutme__principal-text > p {
+        font-size: 16px;
+    }
+
+    .aboutme__principal-icons {
+        padding: 10px 0 80px 0; 
+        display: flex; 
+        justify-content: center;
+    }
+
+    .aboutme__secondary-text > p {
+        display: grid; 
+        font-size: 15px; 
+        padding: 0 0 20px 0; 
+        justify-content: center; 
+        text-align: center;
+    }
+
+    .aboutme__secondary-icons {
+        display: flex; 
+        justify-content: center; 
+        padding: 0 0 50px 0;
+    }
+
+    .aboutme__secondary-icons > i {
+        color: var(--black_color); 
+        font-size: 30px; 
+        padding: 2px 5px 0 0;
+    }
+
+    .aboutme-content > img {
+        width: 350px; 
+        margin: auto;
+    }
+
+    /* PROJECTS RESPONSIVE */
+
+    .projects__text > h2 {
+        font-size: 40px; 
+    }
+
+    .projects__text > p {
+        font-size: var(--body_size); 
+    }
+
+    .card > h3 {
+        font-size: 20px;
+    }
+
+    .card > p {
+        font-size: 16px;
+    }
+
+    /* CONTACT RESPONSIVE */
+
+    .contact {
+        padding: 50px 0 150px 0;
+    }
+
+    .contact-content {
+        width: 70%; 
+        margin: auto;
+    }
+
+    .contact-content > h2 {
+        font-size: 40px; 
+        padding: 0 0 5px 0;
+    }
+
+    .contact-content > p {
+        font-size: 16px;
+    }
+
+    .contact__form {
+        margin: 20px 0; 
+        width: 100%; 
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    /* ABOUT ME  */
+
+    .aboutme__principal-text > h2 {
+        font-size: 30px;
+    }
+
+    .aboutme__secondary-text {
+        justify-content: center; 
+        max-width: 90%; 
+        margin: auto;
+    }
+
+    .aboutme__secondary-icons > i {
+        font-size: 25px; 
+        padding: 2px 10px 0 0;
+    }
+
+    .aboutme-content > img {
+        width: 70%; 
+        margin: auto;
+    }
+
+    /* PROJECTS */
+
+    .projects__text > h2 {
+        font-size: 40px; 
+    }
+
+    .projects__text > p {
+        font-size: var(--body_size);
+    }
+
+    .card__icons {
+        padding: 0 0 30px 0;
+    }
+
+    .card__iconlinks {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    /* CONTACT */
+
+    .contact-content {
+        width: 80%; 
+        margin: auto;
+    }
+
 }

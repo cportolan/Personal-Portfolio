@@ -40,4 +40,3 @@ menuLinks.forEach(link => {
         }
     });
 });
-
