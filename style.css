@@ -650,4 +650,9 @@ footer {
         margin: auto;
     }
 
+    /* FOOTER */
+
+    .footer-content > h2 {
+        font-size: 12px;
+    }
 }
